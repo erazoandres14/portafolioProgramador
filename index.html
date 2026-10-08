@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed-dim":"#00e38b","on-error-container":"#ffdad6","primary":"#f4fff3","primary-fixed":"#56ffa8","on-tertiary-container":"#713fdb","surface-tint":"#00e38b","tertiary":"#fffafb","surface-container-lowest":"#0a0e17","on-error":"#690005","surface":"#0f131c","on-tertiary-fixed":"#23005c","surface-container-high":"#262a34","on-tertiary":"#3c0091","surface-container-highest":"#31353f","on-surface-variant":"#b9cbbc","surface-bright":"#353943","secondary-fixed-dim":"#4cd7f6","on-tertiary-fixed-variant":"#5516be","outline":"#849587","inverse-primary":"#006d40","on-background":"#dfe2ef","on-primary-container":"#007143","background":"#0f131c","error-container":"#93000a","primary-container":"#00ff9d","outline-variant":"#3b4a3f","surface-dim":"#0f131c","on-secondary":"#003640","on-surface":"#dfe2ef","inverse-surface":"#dfe2ef","on-primary-fixed-variant":"#00522f","tertiary-fixed":"#e9ddff","error":"#ffb4ab","secondary-container":"#03b5d3","surface-variant":"#31353f","inverse-on-surface":"#2c303a","surface-container":"#1c1f29","secondary":"#4cd7f6","on-primary":"#00391f","surface-container-low":"#181b25","on-primary-fixed":"#002110","tertiary-fixed-dim":"#d0bcff","on-secondary-fixed":"#001f26","on-secondary-fixed-variant":"#004e5c","tertiary-container":"#e6d9ff","on-secondary-container":"#00424e","secondary-fixed":"#acedff"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-sm":"0.5rem","margin-mobile":"1rem","space-md":"1rem","gutter-mobile":"1rem","margin":"2rem","space-xl":"2.5rem","gutter":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem"},fontFamily:{"headline-xl":["Space Grotesk"],"body-md":["Inter"],"body-lg":["Inter"],"headline-sm":["Space Grotesk"],"headline-lg":["Space Grotesk"],"code-block":["JetBrains Mono"],"body-sm":["Inter"],"label-lg":["JetBrains Mono"],"label-md":["JetBrains Mono"],"label-sm":["JetBrains Mono"],"headline-xl-mobile":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"headline-md":["Space Grotesk"]},fontSize:{"headline-xl":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"code-block":["14px",{lineHeight:"22px",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.04em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.06em",fontWeight:"500"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"500"}],"headline-xl-mobile":["34px",{lineHeight:"42px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs font-code-block text-code-block font-semibold text-primary tracking-tight" href="#inicio"><span class="text-secondary font-code-block text-code-block">dev_portfolio@</span><span>junior-box</span><span class="text-primary-container font-code-block text-code-block">:~$</span></a><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container rounded-DEFAULT"><span class="inline-block w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">ONLINE // AVAILABLE</span></div></div><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="bg-surface-container-high text-primary-fixed"><a aria-current="page" class="font-label-md px-space-sm py-space-xs rounded-DEFAULT transition-colors bg-surface-container-high text-primary-fixed" data-path="inicio" href="#inicio">// Inicio</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-DEFAULT transition-colors" data-path="sobre-mi" href="#sobre-mi">// Sobre Mí</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-DEFAULT transition-colors" data-path="servicios" href="#servicios">// Servicios</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-DEFAULT transition-colors" data-path="metodologia" href="#metodologia">// Metodología</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-DEFAULT transition-colors" data-path="resenas" href="#resenas">// Reseñas</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-DEFAULT transition-colors" data-path="contacto" href="#contacto">// Contacto</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center px-space-md py-space-xs bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase tracking-wider rounded-DEFAULT shadow-[0_0_20px_rgba(0,255,157,0.35)] hover:shadow-[0_0_24px_rgba(0,255,157,0.6)] hover:-translate-y-0.5 transition-all" href="#contacto">[ INICIAR PROYECTO ]</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full relative">
+<!-- ATMOSPHERIC BACKGROUND GRID MATRIX -->
+<div class="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(0,255,157,0.08),transparent_70%)]"></div>
+<!-- SECTION 1: HERO SECTION -->
+<section class="w-full min-h-[calc(100vh-4rem)] flex items-center justify-center px-6 lg:px-12 py-space-xl relative overflow-hidden" id="inicio">
+<!-- Ambient backlights -->
+<div class="absolute -top-24 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-10 right-10 w-80 h-80 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Column: Typography & CTAs -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- Monospace Status Prompt Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-DEFAULT bg-surface-container border border-outline-variant/60 w-fit shadow-[0_0_15px_rgba(0,255,157,0.08)]">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary-fixed tracking-wider uppercase">
+            $ whoami -&gt; JUNIOR FULL-STACK &amp; 3D CREATIVE DEVELOPER
+          </span>
+</div>
+<!-- Headline -->
+<h1 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">
+          Construyo software veloz, bots autónomos y mundos 3D interactivos.
+        </h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Desarrollador enfocado en entregar código limpio, automatizaciones eficientes y experiencias visuales inmersivas sin fricción.
+        </p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-DEFAULT bg-primary-container text-on-primary-fixed font-label-lg text-label-lg uppercase tracking-wider font-semibold shadow-[0_0_24px_rgba(0,255,157,0.45)] hover:shadow-[0_0_36px_rgba(0,255,157,0.7)] hover:-translate-y-0.5 transition-all" href="#contacto">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+            [ INICIAR PROYECTO ]
+          </a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-DEFAULT bg-surface-container-high/60 border border-secondary/40 text-secondary font-label-lg text-label-lg tracking-wider hover:bg-secondary/10 hover:border-secondary transition-all" href="#servicios">
+<span>$ ver_servicios.sh</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Tech Quick Ticker -->
+<div class="flex items-center gap-3 pt-4 text-on-surface-variant font-label-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">// STACK CORE:</span>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-low border border-outline-variant/40 font-label-sm text-label-sm text-primary">NEXT.JS 15</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-low border border-outline-variant/40 font-label-sm text-label-sm text-secondary">PYTHON</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-low border border-outline-variant/40 font-label-sm text-label-sm text-tertiary-fixed-dim">THREE.JS</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-low border border-outline-variant/40 font-label-sm text-label-sm text-primary-container">DISCORD.JS</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive CLI Shell Card -->
+<div class="lg:col-span-5 w-full">
+<div class="w-full rounded-DEFAULT bg-surface-container-lowest/90 border border-outline-variant/60 shadow-[0_0_30px_rgba(0,0,0,0.6)] backdrop-blur-xl overflow-hidden">
+<!-- Terminal Window Bar -->
+<div class="h-10 bg-surface-container-low border-b border-outline-variant/40 px-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container inline-block"></span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">
+              alex@box: ~/workspace/developer.js
+            </div>
+<span class="material-symbols-outlined text-outline text-[16px]">crop_square</span>
+</div>
+<!-- Terminal Content Body -->
+<div class="p-5 font-code-block text-code-block leading-relaxed text-on-surface bg-surface-container-lowest/95 space-y-3 overflow-x-auto">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="text-primary-container font-semibold">&gt;</span>
+<span class="text-secondary">node</span>
+<span class="text-primary">developer.js</span>
+</div>
+<div class="text-primary-fixed-dim font-medium">// Reading execution state...</div>
+<div class="pl-2 border-l border-outline-variant/30 space-y-1 text-on-surface">
+<p><span class="text-secondary font-semibold">const</span> <span class="text-primary">developer</span> = {</p>
+<p class="pl-4"><span class="text-outline">name:</span> <span class="text-primary-container">'Alex R.'</span>,</p>
+<p class="pl-4"><span class="text-outline">role:</span> <span class="text-primary-container">'Junior Full-Stack &amp; 3D Dev'</span>,</p>
+<p class="pl-4"><span class="text-outline">status:</span> <span class="text-secondary-fixed">'DISPONIBLE PARA PROYECTOS'</span>,</p>
+<p class="pl-4"><span class="text-outline">location:</span> <span class="text-primary-container">'Remote // Global'</span>,</p>
+<p class="pl-4">
+<span class="text-outline">stack:</span> [
+                <span class="text-secondary">'Next.js'</span>,
+                <span class="text-secondary">'Python'</span>,
+                <span class="text-tertiary-fixed-dim">'Three.js'</span>,
+                <span class="text-primary-fixed-dim">'Blender'</span>
+                ],
+              </p>
+<p class="pl-4"><span class="text-outline">architecture:</span> <span class="text-on-surface">'Modular / Event-Driven'</span>,</p>
+<p class="pl-4"><span class="text-outline">latency:</span> <span class="text-primary-container">18</span> <span class="text-on-surface-variant">// ms</span></p>
+<p>};</p>
+</div>
+<div class="pt-2 flex items-center gap-2 text-primary-container">
+<span>ready (pid: 4091) [listening on 0.0.0.0:3000]</span>
+<span class="w-2 h-4 bg-primary-container inline-block animate-pulse"></span>
+</div>
+</div>
+<!-- Bottom Micro HUD -->
+<div class="bg-surface-container-high/40 px-4 py-2 border-t border-outline-variant/30 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 bg-primary-container rounded-full"></span> V8 Runtime 18.2</span>
+<span>UTF-8 // LF</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: SOBRE MÍ & TRAYECTORIA -->
+<section class="w-full px-6 lg:px-12 py-space-xl border-t border-outline-variant/20 bg-surface-container-low/40" id="sobre-mi">
+<div class="max-w-7xl mx-auto flex flex-col gap-10">
+<!-- Terminal Header Prompt -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">folder_open</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            $ cat /profile/history.md
+          </h2>
+</div>
+<div class="font-label-sm text-label-sm px-3 py-1 rounded-DEFAULT bg-surface-container border border-outline-variant/50 text-on-surface-variant">
+          READ_ONLY // REVISION 2.4
+        </div>
+</div>
+<!-- Narrative Split Banner -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface-container/70 border border-outline-variant/50 rounded-DEFAULT p-6 lg:p-8 backdrop-blur-md">
+<div class="lg:col-span-8 space-y-4">
+<div class="font-label-md text-label-md text-secondary tracking-widest uppercase">// ORIGEN &amp; FILOSOFÍA TÉCNICA</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed font-medium">
+            De scripts autodidactas a soluciones escalables en producción. Combino disciplina de ingeniería de software con pasión por el arte 3D y diseño interactivo.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Mi enfoque prioriza la ergonomía del código, interfaces con respuestas en microsegundos y lógica desacoplada. Trabajo con pipelines modernos que transforman requerimientos complejos en software mantenible, medible y estéticamente impecable.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-3 p-4 rounded-DEFAULT bg-surface-container-lowest/80 border border-outline-variant/30">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>ENGINEERING STATS</span>
+<span class="text-primary-container">LIVE</span>
+</div>
+<div class="space-y-2">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1 text-on-surface">
+<span>TypeScript / JS</span>
+<span class="text-secondary font-code-block">92%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[92%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1 text-on-surface">
+<span>Three.js / WebGL / Blender</span>
+<span class="text-tertiary-fixed-dim font-code-block">85%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-fixed-dim w-[85%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1 text-on-surface">
+<span>Python / Discord API</span>
+<span class="text-primary-container font-code-block">90%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[90%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3 Key Metric Cards in CLI Shell Style -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Metric 1 -->
+<div class="rounded-DEFAULT bg-surface-container-lowest border border-outline-variant/50 p-6 flex flex-col justify-between hover:border-primary-container/60 hover:shadow-[0_0_20px_rgba(0,255,157,0.15)] transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm text-outline tracking-wider">REGISTRY.PROD</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">rocket_launch</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight mb-1">
+              15+
+            </div>
+<div class="font-label-md text-label-md text-primary-container mb-2">Proyectos Desplegados</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Aplicaciones completas en producción y servidores autónomos activos con telemetría continua.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex items-center gap-2 font-label-sm text-label-sm text-outline">
+<span class="text-primary-container">✓</span> CI/CD Validado en GitHub Actions
+          </div>
+</div>
+<!-- Metric 2 -->
+<div class="rounded-DEFAULT bg-surface-container-lowest border border-outline-variant/50 p-6 flex flex-col justify-between hover:border-secondary/60 hover:shadow-[0_0_20px_rgba(76,215,246,0.15)] transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm text-outline tracking-wider">HEARTBEAT.SYS</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">bolt</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight mb-1">
+              99.9%
+            </div>
+<div class="font-label-md text-label-md text-secondary mb-2">Uptime Verificado</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Bots y microservicios automatizados operando 24/7 sin pérdidas de eventos críticos.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex items-center gap-2 font-label-sm text-label-sm text-outline">
+<span class="text-secondary">•</span> Reconexión automática de sockets
+          </div>
+</div>
+<!-- Metric 3 -->
+<div class="rounded-DEFAULT bg-surface-container-lowest border border-outline-variant/50 p-6 flex flex-col justify-between hover:border-tertiary-fixed-dim/60 hover:shadow-[0_0_20px_rgba(208,188,255,0.15)] transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm text-outline tracking-wider">SPRINT.SLA</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">speed</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight mb-1">
+              &lt;24h
+            </div>
+<div class="font-label-md text-label-md text-tertiary-fixed-dim mb-2">SLA de Respuesta</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Iteraciones ágiles, feedback técnico en tiempo real y resolución prioritaria durante el sprint.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex items-center gap-2 font-label-sm text-label-sm text-outline">
+<span class="text-tertiary-fixed-dim">✓</span> Canales dedicados en Discord
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: SERVICIOS ESENCIALES -->
+<section class="w-full px-6 lg:px-12 py-space-xl relative" id="servicios">
+<div class="max-w-7xl mx-auto flex flex-col gap-10">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<div class="font-label-sm text-label-sm text-primary-container tracking-widest uppercase mb-2">// CAPACIDADES DISPONIBLES</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            $ systemctl list-services --active
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Módulos de desarrollo de alto impacto listos para integración inmediata.
+        </p>
+</div>
+<!-- 3-Column Cyber Terminal Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1: Modern Web Apps -->
+<div class="rounded-DEFAULT bg-surface-container-lowest border border-outline-variant/50 overflow-hidden flex flex-col justify-between hover:border-secondary/70 transition-all group">
+<!-- Terminal Header Bar -->
+<div class="h-9 bg-surface-container-high/80 border-b border-outline-variant/30 px-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="w-2 h-2 rounded-full bg-amber-400"></span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">service://web-engine</span>
+<span class="text-primary-container font-label-sm text-label-sm">[200 OK]</span>
+</div>
+<!-- Card Content -->
+<div class="p-6 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary tracking-widest">01_WEB</span>
+<span class="material-symbols-outlined text-secondary text-[24px] group-hover:scale-110 transition-transform">web</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">
+              Apps &amp; Webs Modernas
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Desarrollo en React y Next.js enfocado en velocidad extrema. Arquitecturas con APIs REST/GraphQL, interfaces con Lighthouse 95+ garantizado y compatibilidad responsiva absoluta.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container border border-outline-variant/40 font-label-sm text-label-sm text-secondary">Next.js 15</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container border border-outline-variant/40 font-label-sm text-label-sm text-on-surface">TailwindCSS</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container border border-outline-variant/40 font-label-sm text-label-sm text-primary-container">Lighthouse 95+</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container border border-outline-variant/40 font-label-sm text-label-sm text-outline">REST APIs</span>
+</div>
+</div>
+<!-- Card Footer Status -->
+<div class="px-6 py-3 bg-surface-container-low border-t border-outline-variant/30 font-label-sm text-label-sm flex items-center justify-between text-on-surface-variant">
+<span>AUDIT: 100/100 SEO &amp; PERF</span>
+<a class="text-secondary hover:text-primary transition-colors flex items-center gap-1" href="#contacto">
+<span>SOLICITAR</span> →
+            </a>
+</div>
+</div>
+<!-- Card 2: Discord Bots & Automation -->
+<div class="rounded-DEFAULT bg-surface-container-lowest border border-outline-variant/50 overflow-hidden flex flex-col justify-between hover:border-primary-container/70 transition-all group">
+<!-- Terminal Header Bar -->
+<div class="h-9 bg-surface-container-high/80 border-b border-outline-variant/30 px-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="w-2 h-2 rounded-full bg-amber-400"></span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-container">service://discord-daemon</span>
+<span class="text-primary-container font-label-sm text-label-sm">[RUNNING]</span>
+</div>
+<!-- Card Content -->
+<div class="p-6 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-container tracking-widest">02_BOTS</span>
+<span class="material-symbols-outlined text-primary-container text-[24px] group-hover:scale-110 transition-transform">smart_toy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">
+              Bots de Discord &amp; Automatización
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Sistemas autónomos construidos con Discord.js y scripts en Python. Ejecutan tareas recurrentes en background 24/7, integración con modelos de OpenAI, webhooks y pasarelas con Stripe.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container border border-outline-variant/40 font-label-sm text-label-sm text-primary-container">Discord.js v14</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container border border-outline-variant/40 font-label-sm text-label-sm text-secondary">Python 3.12</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container border border-outline-variant/40 font-label-sm text-label-sm text-on-surface">OpenAI API</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container border border-outline-variant/40 font-label-sm text-label-sm text-outline">Stripe Webhooks</span>
+</div>
+</div>
+<!-- Card Footer Status -->
+<div class="px-6 py-3 bg-surface-container-low border-t border-outline-variant/30 font-label-sm text-label-sm flex items-center justify-between text-on-surface-variant">
+<span>DAEMON: RESILIENT 24/7</span>
+<a class="text-primary-container hover:text-primary transition-colors flex items-center gap-1" href="#contacto">
+<span>SOLICITAR</span> →
+            </a>
+</div>
+</div>
+<!-- Card 3: 3D WebGL & Blender -->
+<div class="rounded-DEFAULT bg-surface-container-lowest border border-outline-variant/50 overflow-hidden flex flex-col justify-between hover:border-tertiary-fixed-dim/70 transition-all group">
+<!-- Terminal Header Bar -->
+<div class="h-9 bg-surface-container-high/80 border-b border-outline-variant/30 px-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="w-2 h-2 rounded-full bg-amber-400"></span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim">service://webgl-pipeline</span>
+<span class="text-secondary font-label-sm text-label-sm">[60 FPS]</span>
+</div>
+<!-- Card Content -->
+<div class="p-6 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim tracking-widest">03_3D</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[24px] group-hover:scale-110 transition-transform">view_in_ar</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">
+              Entornos WebGL &amp; Blender
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Experiencias interactivas inmersivas con Three.js y React Three Fiber. Modelado low-poly optimizado en Blender, shaders GLSL personalizados y assets listos para renderizado en navegadores móviles.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container border border-outline-variant/40 font-label-sm text-label-sm text-tertiary-fixed-dim">Three.js</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container border border-outline-variant/40 font-label-sm text-label-sm text-on-surface">Blender 4</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container border border-outline-variant/40 font-label-sm text-label-sm text-secondary">GLSL Shaders</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container border border-outline-variant/40 font-label-sm text-label-sm text-outline">Low-Poly Mesh</span>
+</div>
+</div>
+<!-- Card Footer Status -->
+<div class="px-6 py-3 bg-surface-container-low border-t border-outline-variant/30 font-label-sm text-label-sm flex items-center justify-between text-on-surface-variant">
+<span>RENDER: HARDWARE ACCELERATED</span>
+<a class="text-tertiary-fixed-dim hover:text-primary transition-colors flex items-center gap-1" href="#contacto">
+<span>SOLICITAR</span> →
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: METODOLOGÍA & PIPELINE -->
+<section class="w-full px-6 lg:px-12 py-space-xl border-t border-outline-variant/20 bg-surface-container-low/30" id="metodologia">
+<div class="max-w-7xl mx-auto flex flex-col gap-10">
+<!-- Terminal Header Prompt -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<div class="font-label-sm text-label-sm text-secondary tracking-widest uppercase mb-1">// FLUJO DE TRABAJO TRANSPARENTE</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            $ git log --oneline --graph
+          </h2>
+</div>
+<div class="font-label-sm text-label-sm px-3 py-1.5 rounded-DEFAULT bg-surface-container border border-outline-variant/40 text-primary-container">
+          BRANCH: main // REBASE IN PROGRESS
+        </div>
+</div>
+<!-- Vertical Step Pipeline (Sprint Ágil) -->
+<div class="relative pl-6 md:pl-10 space-y-8 before:absolute before:left-2 md:before:left-3.5 before:top-4 before:bottom-4 before:w-0.5 before:bg-gradient-to-b before:from-primary-container before:via-secondary before:to-tertiary-fixed-dim">
+<!-- Step 1 -->
+<div class="relative group">
+<div class="absolute -left-6 md:-left-10 top-1 w-5 h-5 rounded-full bg-surface-container-lowest border-2 border-primary-container flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<div class="rounded-DEFAULT bg-surface-container p-6 border border-outline-variant/50 hover:border-primary-container/50 transition-all">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<span class="font-code-block text-code-block text-primary-container font-semibold">* commit 7f82b01</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-DEFAULT bg-surface-container-high text-on-surface-variant">FASE 01</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-2">
+              01. Diagnóstico &amp; Arquitectura
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Definición clara del alcance técnico sin sorpresas. Analizamos requisitos, seleccionamos el stack preciso (evitando sobreingeniería) y creamos wireframes o diagramas de flujo de datos previos a la primera línea de código.
+            </p>
+<div class="mt-3 flex items-center gap-3 font-label-sm text-label-sm text-outline">
+<span>+ Especificación de API</span>
+<span>+ Modelado de bases de datos</span>
+<span>+ Cronograma sin desvíos</span>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative group">
+<div class="absolute -left-6 md:-left-10 top-1 w-5 h-5 rounded-full bg-surface-container-lowest border-2 border-secondary flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="rounded-DEFAULT bg-surface-container p-6 border border-outline-variant/50 hover:border-secondary/50 transition-all">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<span class="font-code-block text-code-block text-secondary font-semibold">* commit 93c41a9</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-DEFAULT bg-surface-container-high text-on-surface-variant">FASE 02</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-2">
+              02. Desarrollo &amp; Commits Atómicos
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Código documentado con TypeScript y pruebas continuas. Avances periódicos mediante entornos de prueba (preview links), permitiéndote interactuar y retroalimentar de inmediato en sprints de alta cadencia.
+            </p>
+<div class="mt-3 flex items-center gap-3 font-label-sm text-label-sm text-outline">
+<span>+ Commits semánticos</span>
+<span>+ Tipado estricto</span>
+<span>+ Deploy previews en Vercel</span>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative group">
+<div class="absolute -left-6 md:-left-10 top-1 w-5 h-5 rounded-full bg-surface-container-lowest border-2 border-tertiary-fixed-dim flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+</div>
+<div class="rounded-DEFAULT bg-surface-container p-6 border border-outline-variant/50 hover:border-tertiary-fixed-dim/50 transition-all">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<span class="font-code-block text-code-block text-tertiary-fixed-dim font-semibold">* commit e019d3f (HEAD -&gt; prod)</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-DEFAULT bg-surface-container-high text-on-surface-variant">FASE 03</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-2">
+              03. Despliegue &amp; Soporte
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Entrega en Vercel, Supabase o VPS dedicado, transferencia completa de repositorios, configuración de DNS/SSL y documentación detallada con soporte técnico continuo para asegurar estabilidad operacional.
+            </p>
+<div class="mt-3 flex items-center gap-3 font-label-sm text-label-sm text-outline">
+<span>+ SSL &amp; Dominio activo</span>
+<span>+ Handover README.md</span>
+<span>+ Resolución de garantía</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: RESEÑAS & FEEDBACK -->
+<section class="w-full px-6 lg:px-12 py-space-xl" id="resenas">
+<div class="max-w-7xl mx-auto flex flex-col gap-10">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<div class="font-label-sm text-label-sm text-primary-container tracking-widest uppercase mb-1">// TESTIMONIOS VERIFICADOS</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            $ curl -s /api/reviews
+          </h2>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-outline">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>RESPONSE: 200 OK (3 items parsed)</span>
+</div>
+</div>
+<!-- 3 Testimonial Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Review 1 -->
+<div class="rounded-DEFAULT bg-surface-container-lowest border border-outline-variant/50 p-6 flex flex-col justify-between hover:border-primary-container/50 transition-all">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex text-amber-400 text-sm">
+<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-DEFAULT bg-surface-container text-primary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> VERIFICADO
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              “Alex optimizó nuestra aplicación web y construyó un bot de Discord que gestiona a más de 5,000 usuarios sin interrupciones.”
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/30 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center border border-primary-container/40">
+<span class="material-symbols-outlined text-primary-container text-[20px]">person</span>
+</div>
+<div>
+<div class="font-headline-sm text-sm font-semibold text-primary">Carlos M.</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Fundador Startup • @carlos_startup</div>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="rounded-DEFAULT bg-surface-container-lowest border border-outline-variant/50 p-6 flex flex-col justify-between hover:border-secondary/50 transition-all">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex text-amber-400 text-sm">
+<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-DEFAULT bg-surface-container text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> VERIFICADO
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              “El visor 3D interactivo en Three.js superó las expectativas del cliente. Rápido, comunicativo y código muy ordenado.”
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/30 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center border border-secondary/40">
+<span class="material-symbols-outlined text-secondary text-[20px]">brush</span>
+</div>
+<div>
+<div class="font-headline-sm text-sm font-semibold text-primary">Valeria S.</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Directora Creativa • @valeria_design</div>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="rounded-DEFAULT bg-surface-container-lowest border border-outline-variant/50 p-6 flex flex-col justify-between hover:border-tertiary-fixed-dim/50 transition-all">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex text-amber-400 text-sm">
+<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-DEFAULT bg-surface-container text-tertiary-fixed-dim flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> VERIFICADO
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              “Entrega rápida en menos de una semana, documentación impecable y soporte inmediato.”
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/30 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center border border-tertiary-fixed-dim/40">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">sports_esports</span>
+</div>
+<div>
+<div class="font-headline-sm text-sm font-semibold text-primary">David K.</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Comunidad Gaming • @dk_guildmaster</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: CONTACTO & LLAMADA A LA ACCIÓN -->
+<section class="w-full px-6 lg:px-12 py-space-xl border-t border-outline-variant/20 bg-surface-container-lowest relative overflow-hidden" id="contacto">
+<!-- Glowing background accent -->
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_50%,rgba(0,255,157,0.06),transparent_80%)] pointer-events-none"></div>
+<div class="max-w-5xl mx-auto flex flex-col gap-8 relative">
+<!-- Terminal Glow Box -->
+<div class="rounded-DEFAULT bg-surface-container/80 border border-primary-container/40 p-8 lg:p-12 shadow-[0_0_40px_rgba(0,255,157,0.12)] backdrop-blur-xl">
+<!-- Window Controls Header -->
+<div class="flex items-center justify-between pb-6 mb-6 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-amber-400 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-primary-container inline-block"></span>
+<span class="ml-2 font-code-block text-code-block text-primary-fixed-dim">terminal://direct_dispatch</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest hidden sm:inline">
+            ENCRYPTION: TLS 1.3
+          </span>
+</div>
+<!-- Headline & Prompt -->
+<div class="space-y-3 mb-8">
+<div class="font-code-block text-code-block text-primary-container">&gt; initializing open_channel()</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">
+            ¿Tienes un proyecto en mente? Hablemos hoy.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+            Cuéntame sobre tu producto, automatización o experiencia interactiva. Te responderé con viabilidad técnica y estimación directa.
+          </p>
+</div>
+<!-- Quick CLI Direct Command Box -->
+<div class="p-4 rounded-DEFAULT bg-surface-container-lowest border border-outline-variant/40 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 font-code-block text-code-block">
+<div class="flex items-center gap-2 overflow-x-auto text-primary">
+<span class="text-primary-container">$</span>
+<span>npx contact-junior --direct</span>
+</div>
+<button class="px-3 py-1.5 rounded-DEFAULT bg-surface-container-high border border-outline-variant/60 font-label-sm text-label-sm text-primary hover:border-primary-container transition-all self-start sm:self-auto" id="copyCliBtn" onclick="navigator.clipboard.writeText('npx contact-junior --direct'); this.innerText='COPIADO!'; setTimeout(()=&gt;this.innerText='COPIAR COMANDO', 2000)">
+            COPIAR COMANDO
+          </button>
+</div>
+<!-- Direct Contact Action Buttons -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+<!-- Discord Action -->
+<div class="p-5 rounded-DEFAULT bg-surface-container-low border border-outline-variant/50 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[28px]">forum</span>
+<div>
+<div class="font-label-sm text-label-sm text-outline">DISCORD SERVER / DM</div>
+<div class="font-code-block text-code-block font-semibold text-primary">@dev_junior#0001</div>
+</div>
+</div>
+<button class="px-3 py-1 rounded-DEFAULT bg-secondary/10 border border-secondary/40 font-label-sm text-label-sm text-secondary hover:bg-secondary hover:text-on-secondary transition-all" id="discordCopyBtn" onclick="navigator.clipboard.writeText('@dev_junior#0001'); this.innerText='OK!'; setTimeout(()=&gt;this.innerText='COPIAR', 2000)">
+              COPIAR
+            </button>
+</div>
+<!-- Email Action -->
+<a class="p-5 rounded-DEFAULT bg-surface-container-low border border-outline-variant/50 flex items-center justify-between hover:border-primary-container/60 transition-all group" href="mailto:alex.dev@terminal.io">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[28px]">mail</span>
+<div>
+<div class="font-label-sm text-label-sm text-outline">CORREO DIRECTO</div>
+<div class="font-code-block text-code-block font-semibold text-primary">alex.dev@terminal.io</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-container transition-colors text-[20px]">
+              send
+            </span>
+</a>
+</div>
+<!-- Guarantee Status Indicator -->
+<div class="flex items-center justify-between flex-wrap gap-4 pt-6 border-t border-outline-variant/30 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-2 text-primary-fixed">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container inline-block animate-pulse"></span>
+<span class="font-medium">• Respuesta garantizada en menos de 24 horas</span>
+</div>
+<span class="text-outline font-code-block">TIMEZONE: UTC-5 (AVAILABLE TODAY)</span>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.5)]"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-md flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-on-surface-variant"><div class="flex flex-wrap items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary">fork_right</span><span class="font-code-block text-code-block text-on-surface">main*</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary-container">check_circle</span><span>0 errors</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary-container">wifi</span><span>24ms</span></div><div class="hidden sm:flex items-center gap-space-xs bg-surface-container px-space-xs py-0.5 rounded-DEFAULT"><span class="text-on-surface">UTF-8</span></div></div><div class="flex items-center gap-space-lg"><a class="hover:text-primary transition-colors flex items-center gap-space-xs" href="https://github.com" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">terminal</span><span>GH</span></a><a class="hover:text-primary transition-colors flex items-center gap-space-xs" href="https://discord.com" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">forum</span><span>DISCORD</span></a><a class="hover:text-primary transition-colors flex items-center gap-space-xs" href="https://linkedin.com" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">hub</span><span>LINKEDIN</span></a></div><div class="text-on-surface-variant text-center md:text-right"><span class="font-code-block text-code-block">© 2025 dev_portfolio@junior-box. All systems operational.</span></div></div></footer></body></html>
